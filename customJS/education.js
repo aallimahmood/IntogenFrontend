@@ -1,4 +1,6 @@
 var lastSeen = {};
+var publicPort = 'https://intogen-backend.herokuapp.com/';
+var localPort = 'http://localhost:3030/';
 // function to plot graphs on load
 function onLoad()
 {
@@ -11,7 +13,7 @@ function onLoad()
 				};
 	$.ajax({
         type:'post',
-        url:'http://localhost:3030/GetEducationOverview',        
+        url:publicPort + 'GetEducationOverview',        
         contentType:'application/json',
         data:JSON.stringify(req),
           
@@ -46,7 +48,7 @@ function degreeValChanged(){
 				};
 	$.ajax({
         type:'post',
-        url:'http://localhost:3030/GetUniqueStudyProg',        
+        url:publicPort + 'GetUniqueStudyProg',        
         contentType:'application/json',
         data:JSON.stringify(req),
           
@@ -80,7 +82,7 @@ function studyProgValChanged(){
 				};
 	$.ajax({
         type:'post',
-        url:'http://localhost:3030/GetUniqueStudyProg',        
+        url:publicPort + 'GetUniqueStudyProg',        
         contentType:'application/json',
         data:JSON.stringify(req),
           

@@ -1,9 +1,10 @@
-
+var publicPort = 'https://intogen-backend.herokuapp.com/';
+var localPort = 'http://localhost:3030/';
 var lastCountry = '';
 // function to send get unique nationalities
 function getUniqueNationalities()
 {
-	$.get('http://localhost:3030/GetUniqueNationalities',function(data,status){
+	$.get(publicPort + 'GetUniqueNationalities',function(data,status){
 		var countryBox = document.getElementById('countryCmbBox');
 
 		for(var i=0; i<data.length; i++)
@@ -27,7 +28,7 @@ function getNationalityAverages()
 
 	$.ajax({
         type:'post',
-        url:'http://localhost:3030/GetUniqueNationalities',        
+        url:publicPort + 'GetUniqueNationalities',        
         contentType:'application/json',
         data:JSON.stringify(req),
           
@@ -44,7 +45,7 @@ function getNationalityAverages()
 	 		
 	 	$.ajax({
         	type:'post',
-        	url:'http://localhost:3030/GetUniqueNationalities',        
+        	url:publicPort + 'GetUniqueNationalities',        
         	contentType:'application/json',
         	data:JSON.stringify(req),
           

@@ -1,3 +1,6 @@
+
+var publicPort = 'https://intogen-backend.herokuapp.com/';
+var localPort = 'http://localhost:3030/';
 // function to plot graphs on load
 function onLoad()
 {
@@ -28,7 +31,7 @@ function getSuitibleCourses()
 			console.log(req);
 	$.ajax({
         type:'post',
-        url:'http://localhost:3030/Results',        
+        url:publicPort + 'Results',        
         contentType:'application/json',
         data:JSON.stringify(req),
           

@@ -1,4 +1,5 @@
-
+var publicPort = 'https://intogen-backend.herokuapp.com/';
+var localPort = 'http://localhost:3030/';
 // function to load nationality combo box
 function onLoad()
 {	
@@ -8,7 +9,7 @@ function onLoad()
 
 	$.ajax({
         type:'post',
-        url:'http://localhost:3030/FindYourType',        
+        url:publicPort + 'FindYourType',        
         contentType:'application/json',
         data:JSON.stringify(req),
           
@@ -35,7 +36,7 @@ function bachelorRadClicked()
 
 	$.ajax({
         type:'post',
-        url:'http://localhost:3030/FindYourType',        
+        url:publicPort + 'FindYourType',        
         contentType:'application/json',
         data:JSON.stringify(req),
           
@@ -63,7 +64,7 @@ function masterRadClicked()
 
 	$.ajax({
         type:'post',
-        url:'http://localhost:3030/FindYourType',        
+        url:publicPort + 'FindYourType',        
         contentType:'application/json',
         data:JSON.stringify(req),
           
@@ -104,7 +105,7 @@ function  studyProgValChanged()
 
 	$.ajax({
         type:'post',
-        url:'http://localhost:3030/FindYourType',        
+        url:publicPort + 'FindYourType',        
         contentType:'application/json',
         data:JSON.stringify(req),
           
@@ -210,7 +211,7 @@ function submitClicked()
 
 	$.ajax({
         type:'post',
-        url:'http://localhost:3030/FindYourType',        
+        url:publicPort + 'FindYourType',        
         contentType:'application/json',
         data:JSON.stringify(req),
           
