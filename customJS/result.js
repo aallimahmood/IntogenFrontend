@@ -4,9 +4,9 @@ var localPort = 'http://localhost:3030/';
 // function to plot graphs on load
 function onLoad()
 {
-    console.log('data');
+    
 	$.get(publicPort+'Results',function(data,status){
-
+        console.log(data);
 		drawBarChart(data,'chart');
 		
 	});
