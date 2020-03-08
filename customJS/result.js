@@ -11,7 +11,7 @@ function onLoad()
 		
 	});
 
-	//getSuitibleCourses();
+	getSuitibleCourses();
 
 	
 }
