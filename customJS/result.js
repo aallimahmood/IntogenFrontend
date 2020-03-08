@@ -5,6 +5,7 @@ var localPort = 'http://localhost:3030/';
 function onLoad()
 {
 	$.get(publicPort+'Results',function(data,status){
+        console.log("data");
 		drawBarChart(data,'chart');
 		
 	});
