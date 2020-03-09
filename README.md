@@ -16,8 +16,8 @@ Image name "Vis-2.png"
 Image name "Vis-3.png"
 Image name "Vis-4.png"
 
-Project Live Demo:
-IntoGen.avi
+Project Live Demo Link:
+https://youtu.be/9O9Os2UsS_o
 
 How to run as localhost:
 You need to update port address for javascripts in customJS folder. You need to update the get/post requests to localhost post address which is mentioned in every js file.
